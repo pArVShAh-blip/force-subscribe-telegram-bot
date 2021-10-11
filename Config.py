@@ -17,7 +17,7 @@ class Config():
     API_HASH = "ccfe8cf69e2e406fbd5806c88d17504c"
     SUDO_USERS = list(set(int(x) for x in ''.split()))
     SUDO_USERS.append(1934983948)
-    SUDO_USERS = list(set(1934983948))
+    SUDO_USERS = "1934983948"
 
 
 class Messages():
