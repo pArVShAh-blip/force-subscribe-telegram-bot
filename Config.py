@@ -4,7 +4,7 @@ class Config():
   ENV = bool(os.environ.get('ENV', False))
   if ENV:
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
-    DATABASE_URL = os.environ.get("DATABASE_URL", None)
+    DATABASE_URL = os.environ.get("mongodb+srv://PARVSHAH:<password>@cluster0.bqsp2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     APP_ID = os.environ.get("APP_ID", 6)
     API_HASH = os.environ.get("API_HASH", None)
     SUDO_USERS = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
@@ -12,7 +12,7 @@ class Config():
     SUDO_USERS = list(set(SUDO_USERS))
   else:
     BOT_TOKEN = "2091944177:AAH2tB3GHR01KMgdxKSh5soMXvDN1UeN-dk"
-    DATABASE_URL = ""
+    DATABASE_URL = "mongodb+srv://PARVSHAH:<password>@cluster0.bqsp2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     APP_ID = "7809184"
     API_HASH = "ccfe8cf69e2e406fbd5806c88d17504c"
     SUDO_USERS = list(set(int(x) for x in ''.split()))
